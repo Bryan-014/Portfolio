@@ -730,6 +730,58 @@ a.selected {
   }
 }
 
+.wrapper-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.project-example {
+  max-width: 1000px;
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: var(--shadow2);
+  margin-top: 12px;
+  color: var(--title-color);
+}
+
+.middle-project {
+  width: 12px;
+}
+
+.example-box {
+  display: flex;
+  flex-direction: row;
+  margin: 6px;
+}
+
+.example-box.invert {
+  flex-direction: row-reverse;
+}
+
+.example-img {
+  width: 55%;
+}
+
+.example-text {
+  background-color: var(--title-color);
+  color: var(--text-color);
+  padding: 6px;
+  margin-block: 12px;
+  margin-top: 10px;
+  border-radius: 12px;
+  font-size: 10px;
+  width: 50%;
+  height: auto !important;
+}
+
+.wrapper-image-project {
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .container-wrapper {
     justify-content: start;
@@ -818,5 +870,25 @@ a.selected {
 
   .compet-add-container.in-project {
     width: 100% !important;
+  }
+  
+  .middle-project {
+    height: 12px;
+  }
+  
+  .example-box {
+    flex-direction: column-reverse;
+  }
+  
+  .example-box.invert {
+    flex-direction: column-reverse;
+  }
+  
+  .example-img {
+    width: 100%;
+  }
+  
+  .example-text {
+    width: 100%;
   }
 }
